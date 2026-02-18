@@ -176,6 +176,7 @@ function Hero() {
                 height={530}
                 alt="Visual representation of Archeon's work"
                 className="w-full h-full object-bottom"
+                loading="lazy"
               />
               <div
                 className="absolute bottom-0 left-0 right-0 p-4 sm:p-7"

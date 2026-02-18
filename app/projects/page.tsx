@@ -67,6 +67,7 @@ export default function ProjectsPage() {
                         width={400}
                         height={300}
                         className="w-full max-h-[350px] object-cover object-center"
+                        loading="lazy"
                       />
                     ) : (
                       <div

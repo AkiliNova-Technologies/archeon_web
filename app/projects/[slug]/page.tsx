@@ -158,6 +158,7 @@ export default function ProjectDetail() {
                 width={800}
                 height={600}
                 className="w-full h-full object-cover object-center"
+                loading="lazy"
               />
             ) : (
               <div

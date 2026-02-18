@@ -102,6 +102,7 @@ export default function JournalPage() {
                     height={200}
                     alt="Feature Blog Image"
                     className="w-full h-full object-cover"
+                    loading="lazy"
                   />
                   <div
                     className="absolute bottom-5 left-6 uppercase"
