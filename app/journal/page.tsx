@@ -9,6 +9,7 @@ import {
   PageHeader,
   CTABanner,
 } from "@/components/ui";
+import Image from "next/image";
 
 export default function JournalPage() {
   const categories = [...new Set(articles.map((a) => a.category))];
@@ -95,16 +96,13 @@ export default function JournalPage() {
                     background: `linear-gradient(145deg, ${C.ink}, #3A3631)`,
                   }}
                 >
-                  <div
-                    style={{
-                      fontFamily: "var(--font-display)",
-                      fontSize: 72,
-                      fontWeight: 300,
-                      color: "rgba(154,123,79,0.15)",
-                    }}
-                  >
-                    01
-                  </div>
+                  <Image
+                    src={"/image5.jpeg"}
+                    width={400}
+                    height={200}
+                    alt="Feature Blog Image"
+                    className="w-full h-full object-cover"
+                  />
                   <div
                     className="absolute bottom-5 left-6 uppercase"
                     style={{

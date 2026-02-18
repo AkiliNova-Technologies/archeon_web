@@ -35,6 +35,7 @@ export interface Service {
 export interface Project {
   slug: string;
   title: string;
+  image?: string;
   type: string;
   location: string;
   year: string;
@@ -185,6 +186,7 @@ export const projects: Project[] = [
   {
     slug: "meridian-heights",
     title: "Meridian Heights",
+    image: "/image2.jpeg",
     type: "Mixed-Use Development Concept",
     location: "Kampala, Uganda",
     year: "2025",
@@ -208,6 +210,7 @@ This project demonstrates how strategic property intelligence and architectural 
   {
     slug: "serene-court-villas",
     title: "Serene Court Villas",
+    image: "/image3.jpeg",
     type: "Residential Development Concept",
     location: "Entebbe, Uganda",
     year: "2025",
@@ -231,6 +234,7 @@ Material selection emphasises exposed concrete block, locally-fired brick, and h
   {
     slug: "atelier-office-campus",
     title: "Atelier Office Campus",
+    image: "/image4.jpeg",
     type: "Corporate Space Transformation",
     location: "Nairobi, Kenya",
     year: "2024",
