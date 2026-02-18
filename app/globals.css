@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+:root {
+  --color-noir: #1E1E1E;
+  --color-ink: #2D2A26;
+  --color-graphite: #5C564E;
+  --color-stone: #8A8279;
+  --color-warm-gray: #B5AFA6;
+  --color-sand: #E8E2D8;
+  --color-cream: #F4F0EA;
+  --color-parchment: #FAF8F4;
+  --color-bronze: #9A7B4F;
+  --color-bronze-light: #BFA06A;
+  --color-bronze-muted: rgba(154, 123, 79, 0.12);
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgba(154, 123, 79, 0.18);
+  color: #1E1E1E;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #B5AFA6;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF8F4;
+}
+::-webkit-scrollbar-thumb {
+  background: #B5AFA6;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9A7B4F;
+}
+
+/* Prose content for journal articles */
+.prose-content h2 {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 28px;
+  font-weight: 500;
+  color: #1E1E1E;
+  margin: 40px 0 16px;
+  line-height: 1.3;
+}
+
+.prose-content p {
+  font-family: var(--font-body), sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #5C564E;
+  margin-bottom: 20px;
+}
+
+.prose-content p:first-of-type {
+  font-size: 18px;
+  color: #2D2A26;
+}
